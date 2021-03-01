@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Poke-Dex Personal!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4f2d0ae736.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="header">
+      <div class="header--container">
+        <nav class="main-nav">
+          <input
+            type="text"
+            class="main-nav--searcher"
+            id="query"
+            placeholder="Busca Tu Pokemón Favorito!"
+          />
+          <button id="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <div id="error-message" class="hidden hidden_bar" role="alert">
+            <span class="sr-only">Cerrar</span>
+            <strong>Error: </strong>No conozco ese Pokemon. Intenta con otro.
+          </div>
+        </nav>
+        <img src="pokeball.ico" alt="Pokeball" />
+      </div>
+    </section>
+
+    <!-- Pokemon Section -->
+    <section id="pokemon">
+      <div id="container">
+        <h2 id="name"></h2>
+        <h3 id="number"></h3>
+        <div id="info">
+          <img id="image" src="loading.png" alt="Pokemon Image" />
+          <div id="description">
+            <h3>Altura</h3><p id="height"></p>
+            <h3>Peso</h3><p id="weight"></p>
+            <h3>Habilidad</h3><p id="ability"></p>
+            <h3>Tipo</h3><p id="type"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
